@@ -1,0 +1,31 @@
+# reflector_localization.yaml
+param_version: "v1.0.1"
+use_laser: true
+use_point_cloud: false
+use_imu: false
+using_dustin_mapping: true
+using_carto_mapping: false
+using_fullGrapthing_mapping: false
+#节点名称
+scan_topic_name: "/scan"
+points_topic_name: ""
+odom_topic_name: "/odom"
+save_map_topic_name: "/save_reflector_map"
+#提取点参数
+intensity_median_filter_param: 5
+intensity_down_threshold: 3600
+#DBcluster
+reflect_cylinder_diameter : 0.010   #反光柱尺寸
+dbscan_eps_radius : 0.11  #聚类阈值
+dbscan_min_points : 4   #聚类中最小个数阈值
+merge_distance : 2.0  #两个聚类的距离阈值
+#dustin参数
+use_load_map: false
+wait_initial_pose: false
+feature_point_cnt: 0
+distance_ceil_threshold: 20.0
+distance_match_tolerance: 0.05
+relocate_match_tolerance: 0.01
+dustin_merge_distance: 0.5
+save_map_filename: "/home/beerobot/reflector_map/map_1.bin"
+load_map_filename: "/home/beerobot/reflector_map/map_1.bin"

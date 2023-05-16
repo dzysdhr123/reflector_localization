@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="reflector_localization" type="reflector_localization" name="reflector_localization_node" output="screen">
+    <rosparam file="$(find reflector_localization)/param/reflector_localization.yaml" />
+  </node>
+</launch>

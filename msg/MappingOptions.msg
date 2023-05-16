@@ -1,0 +1,14 @@
+int32 brand
+
+bool load_map
+string map_filename
+
+bool use_full_graph
+bool use_graph_mst
+
+float64 merge_distance
+float64 distance_match_tolerance
+float64 relocate_match_tolerance
+float64 distance_ceil_threshold
+int32 id_diff_ceil_threshold
+float64 init_edge_belief 
